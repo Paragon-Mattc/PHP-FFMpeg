@@ -149,7 +149,7 @@ class Gif extends AbstractMediaType
          * @see http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html
          */
 
-        $filters = "fps=30,scale=".$this->dimension->getWidth().":-1:flags=lanczos";
+        $filters = "fps=15,scale=".$this->dimension->getWidth().":-1:flags=lanczos";
         $palette = "/tmp/palette.png";
 
         $commands = $commands_2 = array(
